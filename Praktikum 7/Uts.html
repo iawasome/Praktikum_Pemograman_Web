@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Data Pegawai</title>
+    <style>
+        /* CSS styles for the form elements */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        form {
+            width: 60%;
+            margin: 0 auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #0074D9;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h2>FORM ENTRY DATA PEGAWAI</h2>
+    <form action="Uts.html">
+        <table>
+            <tr>
+                <td><label for="nik">NIK :</label></td>
+                <td><input type="text" name="nik" id="nik"></td>
+            </tr>
+
+            <tr>
+                <td><label for="nama">Nama :</label></td>
+                <td><input type="text" name="nama" id="nama"></td>
+            </tr>
+
+            <tr>
+                <td><label for="tanggal">Tanggal Lahir :</label></td>
+                <td><input type="date" name="tanggal" id="tanggal"></td>
+            </tr>
+
+            <tr>
+                <td><label for="alamat">Alamat :</label></td>
+                <td><textarea name="alamat" id="alamat" cols="30" rows="5"></textarea></td>
+            </tr>
+
+            <tr>
+                <td><label for="telepon">No Telepon :</label></td>
+                <td><input type="number" name="telepon" id="telepon"></td>
+            </tr>
+
+            <tr>
+                <td><label for="jabatan">Jabatan :</label></td>
+                <td><select name="jabatan" id="jabatan">
+                    <option value="" selected disabled>Pilih Jabatan</option>
+                    <option value="CEO">CEO</option>
+                    <option value="Direktur">Direktur</option>
+                    <option value="Manager">Manager</option>
+                    <option value="Staff">Staff</option>
+                    </select></td>
+            </tr>
+
+            <tr>
+                <td><label for="status">Status :</label></td>
+                <td><select name="status" id="status">
+                    <option value="" selected disabled>Pilih Status</option>
+                    <option value="Aktif">Aktif</option>
+                    <option value="Non-Aktif">Non-Aktif</option>
+                    <option value="Pensiun">Pensiun</option>
+                    </select></td>
+            </tr>
+
+            <tr>
+                <td><input type="submit" value="Simpan"></td>
+                <td><input type="reset" value="Batal"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

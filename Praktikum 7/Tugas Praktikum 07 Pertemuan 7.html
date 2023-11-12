@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Box 3</title>
+    <style>
+        .container{
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+        }
+
+        .row1{
+            display: flex;
+            gap: 10px;
+        }
+
+        .row1-yellowbox{
+            height: 100px;
+            background-color: yellow;
+            width: 26%;
+            border: 2px solid black;
+        }
+
+        .row1-orangebox{
+            height: 100px;
+            background-color: orange;
+            width: 74%;
+            border: 2px solid black;
+        }
+
+        .row2{
+            display: flex;
+            gap: 10px;
+        }
+
+        .row2-greenbox{
+            height: 400px;
+            flex-grow: 1;
+            background-color: greenyellow;
+            border: 2px solid black;
+        }
+
+        .row2-aquabox{
+            background-color: aqua;
+            flex-grow: 2;
+            height: 400px;
+            border: 2px solid black;
+        }
+
+        .row2-bluebox{
+            background-color: blue;
+            flex-grow: 1;
+            height: 400px;
+            border: 2px solid black;
+        }
+
+        .row3{
+            background-color: red;
+            height: 100px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row1">
+            <div class="row1-yellowbox">Yellow Box</div>
+            <div class="row1-orangebox">Orange Box</div>
+        </div>
+        <div class="row2">
+            <div class="row2-greenbox">Green Box</div>
+            <div class="row2-aquabox">Aqua Box</div>
+            <div class="row2-bluebox">Blue Box</div>
+        </div>
+        <div class="row3">Baris 3</div>
+    </div>
+</body>
+</html>
