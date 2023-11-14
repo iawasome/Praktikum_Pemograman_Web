@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>http://servisinaja.com</title>
+</head>
+<style>
+    body{
+        font-family: 'Times New Roman', Times, serif;
+        background-color: mintcream;
+    }
+
+    input[type="text"],
+        input[type="date"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #0074D9;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #0056b3;
+        }
+</style>
+<body>
+    <form action="booking result.html">
+    <fieldset>
+        <legend><h3>Booking Service</h3></legend>
+        <table>
+            <tr>
+                <td><label for="Jenis Kendaraan">Jenis Kendaraan :</label></td>
+                <td><select name="Jenis Kendaraan" id="Jenis Kendaraan">
+                    <option value="" selected disabled>Pilih Kendaraan</option>
+                    <option value="Mobil">Mobil</option>
+                    <option value="Truck">Truck</option>
+                    <option value="Motor">Motor</option>
+                    <option value="Bus">Bus</option>
+                    <option value="Alat Berat">Alat Berat</option></select>
+                </td>
+            </tr>
+            
+            <tr>
+                <td><label for="Nama Pemesan">Nama Pemesan :</label></td>
+                <td><input type="text"></td>
+            </tr>
+
+            <tr>
+                <td><label for="Kategori Peminjam">Kategori Peminjam :</label></td>
+                <td><input type="checkbox" name="Kategori Peminjam" id="Kategori Peminjam">Pribadi</td>
+                <td><input type="checkbox" name="Kategori Peminjam" id="Kategori Peminjam">Perusahaan</td>
+            </tr>
+
+            <tr>
+                <td><label for="Deskripsi Kebutuhan">Deskripsi Kebutuhan :</label></td>
+                <td><textarea name="Deskripsi Kebutuhan" id="Deskripsi Kebutuhan" cols="30" rows="5"></textarea></td>
+            </tr>
+
+            <tr>
+                <td><label for="Tanggal Service">Tanggal Service :</label></td>
+                <td><input type="date" name="Tanggal Service" id="Tanggal Service"></td>
+            </tr>
+
+            <tr>
+                <td><label for="Request Montir">Request Montir :</label></td>
+                <td><input type="text" name="Request Montir" id="Request Montir"></td>
+            </tr>
+
+            <tr>
+                <td><label for="Hp/Telepon">Hp/Telepon :</label></td>
+                <td><input type="number"></td>
+            </tr>
+
+            <tr>
+                <td><label for="Email">Email :</label></td>
+                <td><input type="text" name="" id=""></td>
+            </tr>
+
+            <tr>
+                <td><input type="submit" value="Booking Sekarang"></td>
+                <td><input type="reset" value="Reset"></td>
+            </tr>
+        </table>
+    </fieldset>
+    </form>
+</body>
+</html>
