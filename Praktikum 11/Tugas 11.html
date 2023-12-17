@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penjumlahan 2 bilangan</title>
+</head>
+<body>
+    <h1>Penjumlahan 2 bilangan</h1>
+    <input type="number" name="bil1" id="bil1" onchange="jumlah()">
+    <p>+</p>
+    <input type="number" name="bil2" id="bil2" onchange="jumlah()">
+    <p>=</p>
+    <input type="number" name="hasil" id="hasil" readonly>
+
+    <script>
+        function jumlah(){
+            let bilangan1 = parseFloat(document.getElementById("bil1").value) || 0;
+            let bilangan2 = parseFloat(document.getElementById("bil2").value) || 0;
+            
+            let penjumlahan = bilangan1 + bilangan2;
+            document.getElementById("hasil").value = penjumlahan;
+        }
+    </script>
+</body>
+</html>
